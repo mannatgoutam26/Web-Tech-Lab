@@ -1,0 +1,261 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+#header {
+  background-color: #1f4e79;
+  color: white;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  margin-right: 15px;
+}
+
+#header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+#nav {
+  background-color: #163a5c;
+  display: flex;
+  justify-content: center;
+}
+
+#nav a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  background-color: #f0a500;
+  color: black;
+}
+
+
+#content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+h2 {
+  font-size: 26px;
+  color: #1f4e79;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 5px;
+}
+
+
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.box p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 3px solid #1f4e79;
+  margin-bottom: 20px;
+}
+
+
+.faculty-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 180px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border: 1px solid #999;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #1f4e79;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #1f4e79;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.gallery img:hover {
+  border-color: #f0a500;
+}
+
+
+form {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 25px;
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  font-size: 15px;
+}
+
+.options input {
+  margin-left: 10px;
+}
+
+.options input:first-child {
+  margin-left: 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 25px;
+  margin-right: 10px;
+  background-color: #1f4e79;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #f0a500;
+  color: black;
+}
+
+
+#footer {
+  background-color: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 700px) {
+  #header h1 {
+    font-size: 22px;
+  }
+
+  #nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    height: 180px;
+  }
+
+  th, td {
+    padding: 5px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
