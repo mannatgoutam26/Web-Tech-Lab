@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="header">
+  <div id="top">
+    <img src="images/logo.png" alt="College Logo" class="logo">
+    <h1>Government college of Engineering & Technology Jammu</h1>
+  </div>
+  <div id="nav">
+    <a href="index.html">Home</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="students.html">Students</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="admission.html">Student Admission Form</a>
+  </div>
+</div>
+
+
+<div id="content">
+  <h2>Student Admission Form</h2>
+  <form action="thanks.html" method="post" target="_blank">
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob">
+
+    <label>Mobile Number:</label>
+    <input type="text" name="mobile">
+
+    <label>Gender:</label>
+    <div class="options">
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Other"> Other
+    </div>
+
+    <label>Course:</label>
+    <select name="course">
+      <option>-- Select Course --</option>
+      <option>B.Tech Computer Science</option>
+      <option>B.Tech Electronics</option>
+      <option>B.Tech Mechanical</option>
+      <option>B.Tech Civil</option>
+    </select>
+
+    <label>Hobbies:</label>
+    <div class="options">
+      <input type="checkbox" name="hobbies" value="Reading"> Reading
+      <input type="checkbox" name="hobbies" value="Sports"> Sports
+      <input type="checkbox" name="hobbies" value="Music"> Music
+      <input type="checkbox" name="hobbies" value="Coding"> Coding
+    </div>
+
+    <label>Address:</label>
+    <textarea name="address" rows="4"></textarea>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</div>
+
+
+<div id="footer">
+  <p>Government college of Engineering & Technology,Jammu, Jammu and Kashmir</p>
+  <p>Email: info@gcet.com | Phone: 87653XXXXX</p>
+  <p>&copy; 2026 Government college of Engineering & Technology</p>
+</div>
+
+</body>
+</html>
